@@ -5,6 +5,8 @@ import serial
 import time
 
 ser = serial.Serial("/dev/ttyS0", 115200)
+
+
 def main():
     while True:
         count = ser.inWaiting()
@@ -13,7 +15,8 @@ def main():
             ser.write(recv)
         ser.flushInput()
         time.sleep(0.1)
-   
+
+
 if __name__ == '__main__':
     try:
         main()
