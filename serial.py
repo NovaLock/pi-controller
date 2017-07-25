@@ -1,6 +1,7 @@
 #!/usr/bin/python 
-# -*- coding: utf-8 -*
-import serial
+# -*- coding:utf-8 -*-
+
+from serial import serial
 import time
 
 ser = serial.Serial("/dev/ttyS0", 115200)
