@@ -4,7 +4,7 @@
 import serial
 import time
 
-ser = serial.Serial("/dev/ttyS0", 115200)
+ser = serial.Serial("/dev/ttyS0", 9600)
 
 
 def main():
