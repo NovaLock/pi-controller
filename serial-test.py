@@ -4,8 +4,8 @@
 import serial
 import time
 
+
 ser = serial.Serial("/dev/ttyS0", 9600)
-mes = 'helllo'
 
 def main():
     while True:
@@ -13,7 +13,6 @@ def main():
         if count != 0:
             recv = ser.read(count)
             ser.write(recv)
-            prtint recv
         ser.flushInput()
         time.sleep(0.1)
 

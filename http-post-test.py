@@ -25,7 +25,6 @@ dec_init_response = json.loads(init_response.content)
 
 token = dec_init_response['result']
 
-
 print token
 
 
